@@ -31,7 +31,25 @@
   ```
 
 ### Gitflow commands
-- Initialize Gitflow
+- Initialize Gitflow 
+  ```
+  git flow init
+  ```
+
+  Note: this will create a branch named 'develop'. All answers must be default (just use 'Enter' for everything).
+
+- Start a new feature
+  ```
+  git flow feature start MYFEATURE
+  ```
+
+  Note: this will create a branch named "feature/MYFEATURE". Make all the changes here.
+
+After you update and finish your feature, create a Pull Request:
+- Enter to https://github.com/listikrazmarinoviy/project_canopus/pulls
+- Click on "New pull request" green button
+- Select base: develop and compare: YOUR FEATURE
+- 
 
 ### Important links for Project Canopus team:
 
