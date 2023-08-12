@@ -5,6 +5,7 @@ import Signup from "./pages/Signup.jsx";
 import Login from "./pages/Login.jsx";
 import Terms from "./pages/Terms.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import About from "./pages/About.jsx";
 import "./assets/styles.css";
 
 const container = document.getElementById("root");
@@ -18,6 +19,7 @@ root.render(
       <Route path="/login" element={<Login />} />
       <Route path="/termsofuse" element={<Terms />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   </Router>
 );

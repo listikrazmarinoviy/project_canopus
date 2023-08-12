@@ -1,11 +1,8 @@
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import "../assets/sidebar_menu_aboutPage.css";
 
-import "../assets/sidebar_menu.css";
-
-const SidebarMenu = () => {
+const SidebarMenuAboutPage = () => {
   return (
-    <div id="sidebar">
+    <div id="sidebar_about_page">
       <div className="list-item">
         <img
           src="src\assets\images\canopusproject_logo 1.png"
@@ -59,26 +56,8 @@ const SidebarMenu = () => {
           <a href="#">Learn</a>
         </li>
       </ul>
-      <div className="sidebar-buttons">
-        <Link to="about">
-          <p>About Project Canopus</p>
-        </Link>
-        <div className="divider"></div>
-        <div className="sidebar-buttons-login">
-          <Link to="signup">
-            <Button variant="contained" fullWidth="true">
-              Join
-            </Button>
-          </Link>
-          <Link to="login">
-            <Button variant="contained" fullWidth="true">
-              Log in
-            </Button>
-          </Link>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default SidebarMenu;
+export default SidebarMenuAboutPage;
