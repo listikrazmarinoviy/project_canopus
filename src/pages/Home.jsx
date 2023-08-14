@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div id="container">
       <SidebarMenu />
-      <div>
+      <div className="home-text">
         <p>Welcome to the</p>
         <h1 className="title">
           Project <span className="title__span">Canopus</span>

@@ -1,3 +1,6 @@
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
+
 import "../assets/sidebar_menu.css";
 
 const SidebarMenu = () => {
@@ -56,6 +59,24 @@ const SidebarMenu = () => {
           <a href="#">Learn</a>
         </li>
       </ul>
+      <div className="sidebar-buttons">
+        <Link to="about">
+          <p>About Project Canopus</p>
+        </Link>
+        <div className="divider"></div>
+        <div className="sidebar-buttons-login">
+          <Link to="signup">
+            <Button variant="contained" fullWidth="true">
+              Join
+            </Button>
+          </Link>
+          <Link to="login">
+            <Button variant="contained" fullWidth="true">
+              Log in
+            </Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
