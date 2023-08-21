@@ -1,0 +1,64 @@
+#settings-container{
+    display: flex;
+    min-height: 100vh;
+}
+.information-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+ 
+}
+h5{
+    font-family: "Inter", sans-serif;
+    margin: 0 auto;
+    background-color:#038EC9;
+    color: white;
+    
+}
+
+label {
+   
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+
+textarea{
+    width: 100px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;   
+    
+    font-size: 12px;
+}
+
+#box {
+    border-radius: 10px;
+    display: flex;  
+    font-size: 10px; 
+    font-family: "Ledger", serif;
+    height: 30px;
+  
+}
+
+#bio, #change{
+    padding: 15px;
+    font-weight: bold;
+}
+#email{
+    width: 350px;
+    border-radius: 10px;
+    display: flex;  
+    font-size: 10px; 
+    font-family: "Ledger", serif;
+    height: 30px;
+  
+}
+#authentication{
+    padding: 15px;
+    
+}
+#edit{
+    padding: 15px;
+}
+
