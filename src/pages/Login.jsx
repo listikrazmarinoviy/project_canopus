@@ -9,7 +9,7 @@ const Login = () => {
       <div className="logo_text">
         <div className="logo_text__align-center">
           <img
-            src="src\assets\images\canopusproject_logo 1.png"
+            src="./src/assets/images/canopusproject_logo 1.png"
             alt="Menu Item Icon"
           />
           <h1>
