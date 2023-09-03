@@ -1,0 +1,62 @@
+span.Resizer.vertical {
+    cursor: col-resize;
+    width: 2px;
+    background: black;
+}
+
+.left__half {
+    padding-left: 300px;
+    padding-top: 5%;
+    margin-right: 10%;
+}
+
+.right__half {
+    padding-left: 1%;
+    padding-top: 5%;
+    margin-right: 10%;
+}
+
+.tool__description_header {
+    background-color: #038ec9;
+    color: white;
+    font-family: "Cambo", serif;
+    width: 500px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.tool__description_content {
+    margin-top: 5%;
+}
+
+.file__upload_area_description {
+    margin-top: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tool__buttons {
+    margin-top: 5%;
+}
+
+.file__upload_area {
+    margin-top: 2%;
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(110, 173, 255);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropzone__area {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: 5px solid red;
+}
+
+.canopusproject__logo {
+    height: 100px;
+    width: 100px;
+}
