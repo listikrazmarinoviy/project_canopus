@@ -1,0 +1,35 @@
+.card__container {
+    width: 160px;
+    border: solid #000;
+    border-radius: 10px;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    background-color: white;
+    height: 210px;
+    text-align: center;
+}
+
+.fast__tool_title {
+    margin: 1rem 5%;
+    font-size: 18px;
+}
+
+.fast__tool_icon {
+    margin: 0.5rem 5%;
+    font-size: 50px;
+}
+
+.fast__tool_btn {
+    text-align: center;
+    width: 80%;
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 0.5rem 0rem;
+    background-color: #B2C6EC;
+    text-decoration: none;
+    color: black;
+    margin: 1rem 1rem;
+    font-size: 14px;
+}
