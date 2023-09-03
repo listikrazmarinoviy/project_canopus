@@ -1,0 +1,71 @@
+.background__image {
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/purple_ai.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.course__information {
+    margin-left: 55%;
+    margin-top: 4%;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Cambria", serif;
+    font-size: 14px;
+}
+
+.list__of_content {
+    margin-left: 50px;
+    margin-top: 4%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+.sections__title {
+    background-color: #038ec9;
+    color: white;
+    font-family: "Cambria", serif;
+    width: 300px;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.skills__part {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill {
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 4px;
+    height: 25px;
+    width: fit-content;
+    color: black;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.start__course_button {
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(161, 0, 89);
+    font-size: 16px;
+    margin-top: 50px;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 4px;
+}
