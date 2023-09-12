@@ -23,7 +23,7 @@ root.render(
   <Router>
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route path="/signup" element={<Signup />} />
+      <Route exact path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/termsofuse" element={<Terms />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
