@@ -4,7 +4,7 @@ import {Button} from "@mui/material";
 import "./components/Sidebarmenu.css";
 
 import Grid from "@mui/material/Grid";
-import axios from 'axios';
+//import axios from 'axios';
 
 import {Card} from "./components/Card";
 import {FastToolCard} from "./components/FastToolCard";
@@ -41,14 +41,14 @@ const ToolsetHub = () => {
     console.log('value is: ', event.target.value);
   }
 
-  const checkIPAddress = () => {
+  {/*const checkIPAddress = () => {
     try {
         axios.get('http://flatron9996.pythonanywhere.com/ip_analyze', {params: {ip_address: ipAddress}})
         .then((response) => {setRetreivedData(response.data);})
         .then(console.log(retreivedData));
     }
     catch (err) {console.log(err.message)}
-  }
+  }*/}
 
   return (
     <div>
