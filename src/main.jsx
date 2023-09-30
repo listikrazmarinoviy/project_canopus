@@ -13,7 +13,6 @@ import Learn from "./pages/Learn.jsx";
 import Groups from "./pages/Groups.jsx";
 import Tools from "./pages/Tools.jsx";
 import News from "./pages/News.jsx";
-import ToolsetHub from "./pages/ToolsetHub.jsx";
 import "./assets/styles.css";
 
 const container = document.getElementById("root");
@@ -22,7 +21,7 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <Router>
     <Routes>
-      <Route exact path="/" element={<Signup />} />
+      <Route exact path="/" element={<Home />} />
       <Route exact path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/termsofuse" element={<Terms />} />
@@ -35,7 +34,6 @@ root.render(
       <Route path="/learn" element={<Learn />} />
       <Route path="/groups" element={<Groups />} />
       <Route path="/activities" element={<Activities />} />
-      <Route path="/toolsethub" element={<ToolsetHub />} />
     </Routes>
   </Router>
 );
