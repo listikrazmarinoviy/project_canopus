@@ -4,6 +4,7 @@ import {Button} from "@mui/material";
 import "./components/Sidebarmenu.css";
 
 import Grid from "@mui/material/Grid";
+import axios from 'axios';
 
 import {Card} from "./components/Card";
 import {FastToolCard} from "./components/FastToolCard";
@@ -31,7 +32,23 @@ const hashes = [
 
 const ToolsetHub = () => {
 
-  const [buttonPopup, setButtonPopup] = useState(false)
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [ipAddress, setIPAddress] = useState(null);
+  const [retreivedData, setRetreivedData] = useState(null);
+
+  const handleChangeIP = event => {
+    setIPAddress(event.target.value);
+    console.log('value is: ', event.target.value);
+  }
+
+  const checkIPAddress = () => {
+    try {
+        axios.get('http://flatron9996.pythonanywhere.com/ip_analyze', {params: {ip_address: ipAddress}})
+        .then((response) => {setRetreivedData(response.data);})
+        .then(console.log(retreivedData));
+    }
+    catch (err) {console.log(err.message)}
+  }
 
   return (
     <div>
@@ -48,27 +65,27 @@ const ToolsetHub = () => {
         <div className = "sections__tools_list">
           <HorizontalScroll>
               <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
+                  title = "Email analyzer" 
+                  description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
+                  buttonText = "Continue" 
+                  link = "PcapTool"/>
+              <Card 
+                  title = "Key generator" 
                   description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
                   buttonText = "Continue" 
                   link = "cardPage"/>
               <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
+                  title = "Hashing and encryption" 
                   description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
                   buttonText = "Continue" 
                   link = "cardPage"/>
               <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
+                  title = "Obfuscated JS" 
                   description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
                   buttonText = "Continue" 
                   link = "cardPage"/>
               <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
-                  description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
-                  buttonText = "Continue" 
-                  link = "cardPage"/>
-              <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
+                  title = "PCAP file analyzer" 
                   description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
                   buttonText = "Continue" 
                   link = "cardPage"/>
@@ -96,33 +113,33 @@ const ToolsetHub = () => {
         <div className = "sections__tools_list">
           <HorizontalScroll>
             <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
-                  description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
+                  title = "Linux hardening" 
+                  description = "The collection of material to test your linux OS security"
+                  buttonText = "Continue" 
+                  link = "LinuxHardeningModule"/>
+              <Card 
+                  title = "Mobile security" 
+                  description = "Mobile security becomes more crusial these days. We collected materials that provide you with information about security the mobile applications"
                   buttonText = "Continue" 
                   link = "cardPage"/>
               <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
-                  description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
+                  title = "Packet capture and analysis" 
+                  description = "Web-based tools that deal with Internet packet routing and tests"
                   buttonText = "Continue" 
                   link = "cardPage"/>
               <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
-                  description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
+                  title = "Reverse engineering" 
+                  description = "Want to know the architecture of application that you use? Reverse engineering techniques can help you"
                   buttonText = "Continue" 
                   link = "cardPage"/>
               <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
-                  description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
+                  title = "Threat hunting" 
+                  description = "Get ready to the latest threats and find the information about them in this module"
                   buttonText = "Continue" 
                   link = "cardPage"/>
               <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
-                  description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
-                  buttonText = "Continue" 
-                  link = "cardPage"/>
-              <Card 
-                  title = "Basic test to define whether your server is easy to hack" 
-                  description = "This is the machine learning model that has been trained to determine, how is it likely that your server will be hacked"
+                  title = "Web application testing" 
+                  description = "API, Docker, frameworks - this is what web applications are built with. Test them to find possible vulnerabilities"
                   buttonText = "Continue" 
                   link = "cardPage"/>
               <Card 
@@ -183,40 +200,8 @@ const ToolsetHub = () => {
                       <Button variant = "outlined">Decipher</Button>
                     </InputAdornment>
                   ),}}
-            />
-            
-            <div>
-              <h3 className = "sections__title">
-                Create a hash
-              </h3>
-              <TextField
-                  id = "margin-normal"
-                  label = "Paste text to create a hash..."
-                  margin = "normal"
-                  size = "small"
-                  fullWidth
-                  InputProps = {{
-                    endAdornment: (
-                      <InputAdornment position = "end">
-                        <Button variant = "outlined">Create a hash</Button>
-                      </InputAdornment>
-                    )
-                  }}
-              />
-
-              <TextField
-                  id = "select_hash"
-                  select
-                  label = "Select hash encryption"
-                  defaultValue = "MD5"
-              >
-                {hashes.map((option) =>(
-                  <MenuItem key = {option.value} value = {option.value}>
-                    {option.label}
-                  </MenuItem>
-                ))}
-              </TextField>  
-            </div>  
+            />           
+          
 
             <div>
                 <h3 className = "sections__title">
@@ -229,10 +214,14 @@ const ToolsetHub = () => {
                   margin = "normal"
                   size = "small"
                   fullWidth
+                  onChange = {handleChangeIP}
+                  value = {ipAddress}
                   InputProps = {{
                     endAdornment: (
                       <InputAdornment position = "end">
-                        <Button variant = "outlined">Check IP</Button>
+                        <Button 
+                          variant = "outlined" 
+                          onClick = {checkIPAddress}>Check IP</Button>
                       </InputAdornment>
                     )
                   }}
