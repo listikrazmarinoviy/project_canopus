@@ -22,7 +22,7 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <Router>
     <Routes>
-      <Route exact path="/" element={<Home />} />
+      <Route exact path="/" element={<Signup />} />
       <Route exact path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/termsofuse" element={<Terms />} />
