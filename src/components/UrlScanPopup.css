@@ -1,0 +1,62 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.proceed_button {
+    height: 35px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 206, 71);
+    border-radius: 5px;
+    border-width: 0px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.close_button {
+    height: 35px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.result_field {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 80vh;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.output_field {
+    display: flex;
+    flex-direction: column;
+}

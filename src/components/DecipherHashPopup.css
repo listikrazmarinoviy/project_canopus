@@ -1,0 +1,99 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed black;
+    height: 300px;
+    width: 575px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.uploaded-row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #e9f0ff;
+}
+
+.upload-content {
+    display: flex;
+    align-items: center;
+}
+
+.action_buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.proceed_button {
+    height: 35px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 206, 71);
+    border-radius: 5px;
+    border-width: 0px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.close_button {
+    height: 35px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.result_field {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 80vh;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.combined_field {
+    display: flex;
+    flex-direction: row;
+}

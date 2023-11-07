@@ -1,0 +1,109 @@
+span.Resizer.vertical {
+    cursor: col-resize;
+    width: 2px;
+    background: black;
+}
+
+.left__half {
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    padding-top: 5%;
+    margin-right: 10%;
+}
+
+.right__half {
+    padding-left: 1%;
+    padding-top: 5%;
+    margin-right: 10%;
+}
+
+.tool__description_header {
+    background-color: #038ec9;
+    color: white;
+    font-family: "Cambo", serif;
+    width: 500px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.tool__description_content {
+    margin-top: 5%;
+    line-height: 1.5;
+}
+
+.canopusproject__logo {
+    height: 100px;
+    width: 100px;
+}
+
+.upload__form {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed black;
+    height: 400px;
+    width: 550px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.uploaded-row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #e9f0ff;
+    width: 550px;
+}
+
+.upload-content {
+    display: flex;
+    align-items: center;
+}
+
+.action_buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.proceed_button {
+    height: 35px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 206, 71);
+    border-radius: 5px;
+    border-width: 0px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.close_button {
+    height: 35px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 15px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+

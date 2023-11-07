@@ -1,0 +1,33 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sections {
+  margin-left: 340px;
+  margin-right: 250px;
+}
+
+.sections__title {
+  background-color: #038ec9;
+  color: white;
+  font-family: "Cambo", serif;
+  width: 300px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.sections__title--backgroundColorRed {
+  background-color: #c90303;
+  color: white;
+  font-family: "Cambo", serif;
+  width: 400px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.arrow__icon {
+  width: 20px;
+  height: 50px;
+}
