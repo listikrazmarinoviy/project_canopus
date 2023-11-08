@@ -35,9 +35,7 @@ const SidebarMenu = () => {
             src="src\assets\images\icons8-circle-64.png"
             alt="Menu Item Icon"
           />
-          <Link to = "toolsethub">
-            <p>Toolset Hub</p>
-          </Link>
+          <a href="#">Tools</a>
         </li>
         <li className="list-item">
           <img

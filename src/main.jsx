@@ -1,40 +1,45 @@
-import ReactDOM from "react-dom/client";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import Signup from "./pages/Signup.jsx";
-import Login from "./pages/Login.jsx";
-import Terms from "./pages/Terms.jsx";
-import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
-import About from "./pages/About.jsx";
-import OurTeam from "./pages/OurTeam.jsx";
-import Contact from "./pages/Contact.jsx";
-import Activities from "./pages/Activities.jsx";
-import Learn from "./pages/Learn.jsx";
-import Groups from "./pages/Groups.jsx";
-import Tools from "./pages/Tools.jsx";
-import News from "./pages/News.jsx";
-import "./assets/styles.css";
+import './index.css'
+
+
+import App from './App'
+import LinuxHardeningModule from './modules/LinuxHardeningModule';
+import MobileSecurityModule from './modules/MobileSecurityModule';
+import PacketCaptureAndAnalysis from './modules/PacketCaptureAndAnalysis';
+import ReverseEngineeringModule from './modules/ReverseEngineeringModule';
+import ThreatHuntingModule from './modules/ThreatHuntingModule';
+import WebApplicationTestingModule from './modules/WebApplicationTestingModule';
+
+import EmailAnalyzer from './toolsethub_pages/EmailAnalyzer';
+import GenerateKeys from './toolsethub_pages/GenerateKeys';
+import HashAndEnc from './toolsethub_pages/HashAndEnc';
+import ToolsetHub from './ToolsetHub';
+//import ObfuscatedJs from './toolsethub_pages/ObfuscatedJs';
+import ToolInteractionPcap from './toolsethub_pages/ToolInteractionPcap';
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 
-root.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
+
   <Router>
     <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/signup" element={<Signup />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/termsofuse" element={<Terms />} />
-      <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/ourteam" element={<OurTeam />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/tools" element={<Tools />} />
-      <Route path="/news" element={<News />} />
-      <Route path="/learn" element={<Learn />} />
-      <Route path="/groups" element={<Groups />} />
-      <Route path="/activities" element={<Activities />} />
+      <Route exact path = "/" element = {<ToolsetHub />} />
+      <Route path = "/linux_hardening_module" element = {<LinuxHardeningModule />} />
+      <Route path = "/mobile_security_module" element = {<MobileSecurityModule />} />
+      <Route path = "/packet _capture_and_analysis" element = {<PacketCaptureAndAnalysis />} />
+      <Route path = "/reverse_engineering" element = {<ReverseEngineeringModule />} />
+      <Route path = "/threat_hunting" element = {<ThreatHuntingModule />} />
+      <Route path = "/web_application_testing" element = {<WebApplicationTestingModule />} />
+
+      <Route path = '/email_analyzer' element = {<EmailAnalyzer />} />
+      <Route path = '/generate_keys' element = {<GenerateKeys />} />
+      <Route path = '/hashing_and_encryption' element = {<HashAndEnc />} />
+      {/*<Route path = '/obfuscated_js' element = {<ObfuscatedJs />} />*/}
+      <Route path = '/tool_interaction_pcap' element = {<ToolInteractionPcap />} />
     </Routes>
   </Router>
-);
 
+)

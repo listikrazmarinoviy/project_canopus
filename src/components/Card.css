@@ -19,6 +19,7 @@
 .card-description {
     margin: 0.5rem 5%;
     font-size: 13px;
+    height: 150px;
 }
 
 .card-btn {
@@ -30,4 +31,5 @@
     text-decoration: none;
     color: black;
     margin: 1rem 1rem;
+    font-weight: bold;
 }

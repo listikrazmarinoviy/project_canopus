@@ -1,6 +1,9 @@
 import React from "react";
 import "./Card.css";
 
+import {Routes, Route, useNavigate} from 'react-router-dom';
+
+
 export const Card = ({
     title,
     description,
@@ -11,7 +14,7 @@ export const Card = ({
         <div className = "card-container">
             <h4 className = "card-title">{title}</h4>
             <p className = "card-description">{description}</p>
-            <a href = {link} className = "card-btn">{buttonText}</a>
+            <button  className = "card-btn">{buttonText}</button>
     </div>
     )
 }
